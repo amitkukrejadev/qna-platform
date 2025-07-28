@@ -32,7 +32,9 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-
+.env.local        # 🆕 specific local env overrides
+.env.development  # 🆕 for local-only dev values
+.env.production   # 🆕 ignore unless version-controlled on purpose
 
 # vercel
 .vercel
@@ -40,3 +42,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE / system
+.vscode/          # 🆕 VSCode settings
+.idea/            # 🆕 JetBrains IDEs (WebStorm, etc.)
+*.swp             # 🆕 Vim swap files
+*.swo             # 🆕 Vim temp files
+*.tmp             # 🆕 general temp files
+
+# system logs or macOS junk
+Thumbs.db         # 🆕 Windows thumbnail cache
+ehthumbs.db       # 🆕 More Windows cache
+Icon?             # 🆕 macOS icon
+Desktop.ini       # 🆕
+
+# user-specific config or secret files
+src/models/client/config.ts  # 🆕 optional if sensitive or purely local
+
