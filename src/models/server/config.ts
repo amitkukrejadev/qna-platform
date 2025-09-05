@@ -1,4 +1,4 @@
-import env from "../../app/env";
+import env from "../../env";
 // Init your Web SDK
 import { Avatars, Client, Databases, Storage, Users } from "node-appwrite";
 
